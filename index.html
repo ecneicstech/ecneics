@@ -1,44 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=3.0, minimal-ui">
-    <title>Ecneics</title>
-    <link rel="stylesheet" href="css/main.css">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapidmotion Mocap Solution</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Ecneics Technology</h1>
-        <div class="toggle-container">
-            <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Logos\Ecneics_Logo_Without_Background.png" alt="Logo"></a>
         </div>
-        <p>Welcome to Ecneics. The site is under maintenance, If you have any queries,feel free to contact us <a href="mailto:ecneicstechnology@gamil.com">Send email</a> </p>
-        <a href="privacy_policy.html">our privacy policy</a> 
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#documents">Documents</a></li> <!-- Added Documents link -->
+                <li class="login-button"><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <!-- Background Video -->
+        <div class="video-container">
+            <video id="background-video" autoplay loop muted playsinline>
+                <source src="Web_Videos\0001-0094.mp4" type="video/mp4">
+                <!-- Include additional source elements if needed for different video formats -->
+                Your browser does not support the video tag.
+            </video>
+            <h2 class="video-text">
+                <span class="large-text">Rapidmotion</span><br>
+                <span class="small-text">Effortless Process, Exceptional Results. Harness the power of AI-driven mocap</span>
+            </h2>
+        </div>
+        
+        <!-- Content -->
+        <div class="content with-background">
+            <div class="container">
+                <h1>Rapidmotion Mocap Solution</h1> <!-- Updated heading -->
+                <p>Streamline your workflow with Rapidmotion—import videos for outstanding 3D animations in just a minute.</p>
+                <p>Create fluid animations with Rapidmotion Mocap</p>
+                <p>Rapidmotion offers 24/7 online service</p> <!-- Updated text -->
+            </div>
+        </div>
+
+        
+    </section>
    
+    
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel orci ac augue ullamcorper eleifend. Integer et finibus turpis. Vivamus at tristique sem. Fusce bibendum lacus vitae nunc rutrum, in ullamcorper sem interdum. Phasellus ut dictum enim. Sed rhoncus risus quis elit iaculis fringilla. Donec tristique lacinia lorem id tincidunt.</p>
+            <p>Nulla facilisi. Aliquam euismod, neque ut feugiat fringilla, mauris urna tempus eros, nec luctus sem risus ut enim. Mauris sed nibh vitae tortor ullamcorper accumsan. Cras vitae arcu et justo blandit rhoncus sed ac lectus. Proin id placerat velit. In hac habitasse platea dictumst.</p>
+        </div>
+    </section>
 
-<script>
-    var checkbox = document.querySelector('input[name=theme]');
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123456789</p>
+        </div>
+    </section>
 
-checkbox.addEventListener('change', function() {
-    if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-})
-
-let trans = () => {
-    document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-    }, 1000)
-}
-
-</script>
-
+    <footer>
+        <p>&copy; 2024 Rapidmotion Mocap Software. All rights reserved. | <a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_and_conditions.html">Terms and Conditions</a></p>
+    </footer>
+    
 </body>
 </html>
