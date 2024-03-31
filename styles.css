@@ -5,7 +5,6 @@ body {
     background-color: #000; /* Dark background color */
     background-size: cover;
     background-position: center;
-    
 }
 
 /* Hide scrollbar */
@@ -124,7 +123,7 @@ nav ul li:not(.login-button) a:hover {
 }
 
 #home .content.with-background {
-    background-image: url('Logos/Markermocap.png'); /* Specify the background image */
+    background-image: url('Logos/content_background.jpg'); /* Specify the background image */
     background-size: cover;
     background-position: center;
     background-color: #000; /* Set background color to match the page */
@@ -145,6 +144,158 @@ nav ul li:not(.login-button) a:hover {
     font-size: 36px; /* Increase font size for the heading */
 }
 
+
+
+
+#intro {
+    background-image: url('Logos/Rapidmotion_With_Background.png'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+}
+
+.intro-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Add a semi-transparent overlay */
+}
+
+
+
+#about .aboutus {
+    background-image: url('Logos/background_about_us.jpg'); /* Specify the background image */
+    background-size: cover;
+    background-position: center;
+    padding: 200px; /* Adjust padding as needed */
+    background-color: rgba(255, 0, 0, 0.5); /* Red background color with 50% opacity */
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+#about .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* White background color with 30% opacity */
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+#about .container {
+    text-align: center; /* Center-align text */
+    color: #ffffff; /* Text color */
+    position: relative; /* Ensure z-index works correctly */
+    z-index: 1; /* Ensure text is above the background overlay */
+}
+
+#about h2 {
+    font-size: 70px; /* Heading font size */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+#about p {
+    font-size: 30px; /* Paragraph font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+
+
+
+#contact .container {
+    text-align: center; /* Center-align the content */
+    color: #ffffff;
+    background-color: #141414;
+    padding: 100px 50px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact .contact-info {
+    display: flex;
+    align-items: center; /* Align content vertically */
+}
+
+#contact .logo {
+    margin-right: 20px; /* Adjust the margin to move the logo to the left */
+}
+
+#contact .contact-details {
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: left; /* Align contact details text to the left */
+}
+#contact .contact-details span {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+}
+
+#contact .contact-details a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+}
+
+#contact .contact-details a:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #888888; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+#contact .contact-details h2 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Add margin-bottom to separate contact details from social icons */
+    text-align: left; /* Align heading to the left */
+}
+
+#contact .social-icons {
+    display: flex;
+    align-items: center; /* Align social icons vertically */
+    flex-wrap: wrap; /* Allow wrapping of social icons if necessary */
+    margin-top: 20px; /* Add margin-top to separate social icons from contact details */
+}
+
+#contact .social-icons a {
+    margin-left: 20px;
+    display: inline-block; /* Ensure social icons are displayed in a row */
+}
+
+.documents-link {
+    text-align: left; /* Align documents link to the left */
+    margin-top: 20px; /* Adjust as needed */
+    padding-left: 280px; /* Add padding to move it away from social icons */
+    padding-right: 150px;
+}
+
+.documents-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -154,6 +305,17 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+footer a {
+    color: #fff; /* Set the color of the links */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    color: #fff; /* Keep the color unchanged on hover */
+}
+
+
 
 /* Media Queries for Responsive Design */
 
@@ -177,5 +339,22 @@ footer {
 
     .video-text {
         font-size: 20px; /* Decreased font size for smaller screens */
+    }
+
+    #contact .container {
+        padding: 50px 10px;
+        font-size: 18px;
+    }
+
+    .social-icons {
+        padding: 40px 0;
+    }
+
+    .contact-info {
+        padding: 0 10px;
+    }
+
+    .social-icons {
+        padding: 30px 0;
     }
 }
